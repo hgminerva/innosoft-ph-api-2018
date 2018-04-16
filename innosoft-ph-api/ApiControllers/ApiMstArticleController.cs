@@ -30,7 +30,6 @@ namespace innosoft_ph_api.ApiControllers
                                AccountId = d.AccountId,
                                SalesAccountId = d.SalesAccountId,
                                CostAccountId = d.CostAccountId,
-
                            };
 
             return articles.ToList();
@@ -47,7 +46,8 @@ namespace innosoft_ph_api.ApiControllers
                               ArticleCode = d.ArticleCode,
                               ManualArticleCode = d.ManualArticleCode,
                               Article = d.Article,
-                              Category = d.Category
+                              Category = d.Category,
+                              ArticleTypeId = d.ArticleTypeId
                           };
 
             return article.FirstOrDefault();

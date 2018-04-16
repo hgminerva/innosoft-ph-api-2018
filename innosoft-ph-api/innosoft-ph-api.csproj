@@ -196,6 +196,7 @@
   <ItemGroup>
     <Compile Include="ApiControllers\ApiMstArticleController.cs" />
     <Compile Include="ApiControllers\ApiMstUserController.cs" />
+    <Compile Include="ApiControllers\ApiTrnLeadController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -240,6 +241,7 @@
     </Compile>
     <Compile Include="Entities\MstArticle.cs" />
     <Compile Include="Entities\MstUser.cs" />
+    <Compile Include="Entities\TrnLeads.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
