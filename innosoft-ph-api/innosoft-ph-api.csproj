@@ -196,7 +196,9 @@
   <ItemGroup>
     <Compile Include="ApiControllers\ApiMstArticleController.cs" />
     <Compile Include="ApiControllers\ApiMstUserController.cs" />
+    <Compile Include="ApiControllers\ApiTrnDeliveryController.cs" />
     <Compile Include="ApiControllers\ApiTrnLeadController.cs" />
+    <Compile Include="ApiControllers\ApiTrnQuotationController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -239,6 +241,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>innosoftdb.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Entities\TrnDelivery.cs" />
+    <Compile Include="Entities\TrnQuotation.cs" />
     <Compile Include="Entities\MstArticle.cs" />
     <Compile Include="Entities\MstUser.cs" />
     <Compile Include="Entities\TrnLeads.cs" />

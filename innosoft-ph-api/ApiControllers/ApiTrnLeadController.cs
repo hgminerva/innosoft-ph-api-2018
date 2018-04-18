@@ -43,27 +43,27 @@ namespace innosoft_ph_api.ApiControllers
         [HttpGet, Route("detail/{id}")]
         public Entities.TrnLeads DetailLead(String id)
         {
-            var leads = from d in db.IS_TrnLeads.OrderByDescending(d => d.Id)
-                        where d.Id == Convert.ToInt32(id)
-                        select new Entities.TrnLeads
-                        {
-                            Id = d.Id,
-                            LeadNumber = d.LeadNumber,
-                            LeadDate = d.LeadDate.ToShortDateString(),
-                            LeadName = d.LeadName,
-                            Address = d.Address,
-                            ContactPerson = d.ContactPerson,
-                            ContactPosition = d.ContactPosition,
-                            ContactEmail = d.ContactEmail,
-                            ContactPhoneNo = d.ContactPhoneNo,
-                            ReferredBy = d.ReferredBy,
-                            Remarks = d.Remarks,
-                            EncodedByUserId = d.EncodedByUserId,
-                            AssignedToUserId = d.AssignedToUserId,
-                            LeadStatus = d.LeadStatus
-                        };
+            var lead = from d in db.IS_TrnLeads.OrderByDescending(d => d.Id)
+                       where d.Id == Convert.ToInt32(id)
+                       select new Entities.TrnLeads
+                       {
+                           Id = d.Id,
+                           LeadNumber = d.LeadNumber,
+                           LeadDate = d.LeadDate.ToShortDateString(),
+                           LeadName = d.LeadName,
+                           Address = d.Address,
+                           ContactPerson = d.ContactPerson,
+                           ContactPosition = d.ContactPosition,
+                           ContactEmail = d.ContactEmail,
+                           ContactPhoneNo = d.ContactPhoneNo,
+                           ReferredBy = d.ReferredBy,
+                           Remarks = d.Remarks,
+                           EncodedByUserId = d.EncodedByUserId,
+                           AssignedToUserId = d.AssignedToUserId,
+                           LeadStatus = d.LeadStatus
+                       };
 
-            return leads.FirstOrDefault();
+            return lead.FirstOrDefault();
         }
 
         [HttpPost, Route("add")]
