@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace innosoft_ph_api.ApiControllers
 {
-    [RoutePrefix("api/quotations")]
+    [RoutePrefix("api/quotation")]
     public class ApiTrnQuotationController : ApiController
     {
         private Data.innosoftdbDataContext db = new Data.innosoftdbDataContext();

@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace innosoft_ph_api.ApiControllers
 {
-    [RoutePrefix("api/leads")]
+    [RoutePrefix("api/lead")]
     public class ApiTrnLeadController : ApiController
     {
         private Data.innosoftdbDataContext db = new Data.innosoftdbDataContext();
