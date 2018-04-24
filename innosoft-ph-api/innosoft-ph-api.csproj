@@ -196,6 +196,7 @@
   <ItemGroup>
     <Compile Include="ApiControllers\ApiMstArticleController.cs" />
     <Compile Include="ApiControllers\ApiMstUserController.cs" />
+    <Compile Include="ApiControllers\ApiTrnActivityController.cs" />
     <Compile Include="ApiControllers\ApiTrnContinuityController.cs" />
     <Compile Include="ApiControllers\ApiTrnDeliveryController.cs" />
     <Compile Include="ApiControllers\ApiTrnLeadController.cs" />
@@ -243,6 +244,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>innosoftdb.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Entities\TrnActivity.cs" />
     <Compile Include="Entities\TrnContinuity.cs" />
     <Compile Include="Entities\TrnDelivery.cs" />
     <Compile Include="Entities\TrnQuotation.cs" />

@@ -40,8 +40,8 @@ namespace innosoft_ph_api.ApiControllers
                            };
 
             return supports.ToList();
-        }
 
+        }
 
         [HttpGet, Route("detail/{id}")]
         public Entities.TrnSupport DetailSupoort(String id)
@@ -157,8 +157,8 @@ namespace innosoft_ph_api.ApiControllers
             try
             {
                 var support = from d in db.IS_TrnSupports
-                                 where d.Id == Convert.ToInt32(id)
-                                 select d;
+                              where d.Id == Convert.ToInt32(id)
+                              select d;
 
                 if (support.Any())
                 {
